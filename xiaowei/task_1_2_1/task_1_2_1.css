@@ -1,0 +1,203 @@
+/*设置默认样式重置*/
+body,p,div,table,ol,ul,h1,h2,h3,h4,li,th,td{
+    padding:0;
+    margin:0;
+}
+
+button{
+    border:none;
+}
+
+li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+    border:0;
+}
+
+/*头部导航信息*/
+#header{
+    height:60px;
+    background: #333333;
+}
+
+#header:after{
+    content: "";
+    display:block;
+    clear:both;
+}
+#header img{
+    height:60px;
+    display: block;
+    float: left;
+    padding-left:40px;
+}
+
+#header .nav{
+    float: right;
+    padding-right: 20px;
+
+}
+
+#header  li{
+    float:left;
+    margin-left:30px;
+    line-height: 60px;
+}
+
+#header a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* 内容区域 */
+#content{
+    background: #dedede;
+    padding:20px 20px;
+}
+
+#content .article,#content .picList{
+    background: #ffffff;
+    border:1px solid #cdcdcd;
+    padding:28px 20px;
+    margin-top:20px;
+}
+
+#content .article h2{
+    line-height: 42px;
+}
+
+#content .article h4{
+    line-height: 34px;
+    color:#686b70;
+}
+
+.article .writer,.article .publishedTime{
+    font-size:12px;
+    line-height: 28px;
+    padding-bottom: 8px;
+    color:#835a60;
+}
+
+.article p{
+    line-height: 26px;
+    font-size:15px;
+    text-indent: 2em;
+}
+
+.article img{
+    margin:16px 0;
+}
+
+.article ul,ol{
+    padding:0 20px;
+}
+
+.article ul li{
+    line-height: 26px;
+
+}
+/*图片列表区域*/
+.picList ul{
+    padding:0 38px;
+}
+
+.picList img{
+    width: 100px;
+}
+
+#content .picList li{
+    border:1px solid #cdcdcd;
+    padding:10px 10px;
+    width:120px;
+    margin-top:10px;
+}
+
+.picList li p{
+    line-height:16px;
+    text-align: center;
+}
+
+.article .capital{
+    text-indent: 0em;
+}
+
+.article table{
+    border: 1px solid #cdccd1;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+.article table tr{
+    border-bottom: 1px solid #dbdbdb;
+    line-height: 24px;
+}
+.article table th{
+    background: #333333;
+    border-right:1px solid #dbdbdb;
+}
+
+.article table td{
+    border-right:1px solid #dbdbdb;
+    padding-left: 10px;
+}
+
+.article table .total{
+    background:#cccccc;
+}
+
+/*侧边栏*/
+.sideBar{
+    margin-top:20px;
+    background: #ffffff;
+    padding:10px 20px;
+}
+
+.sideBar form{
+    font-size:14px;
+}
+
+.sideBar form .inputBox{
+    margin-top:20px;
+    position:relative;
+}
+
+.sideBar label{
+    float: left;
+    width:300px;
+    text-align: right;
+}
+
+.sideBar .tip{
+    line-height:30px;
+    width:200px;
+    position:absolute;
+    left:300px;
+    top:15px;
+    font-size:12px;
+
+}
+
+.sideBar button {
+    width:100%;
+    margin:20px auto;
+    line-height:40px;
+    background: #355acd;
+    border-radius: 5px;
+
+}
+
+.sideBar textarea{
+    width:400px;
+    height:300px;
+}
+
+/*底部样式*/
+#footer{
+    background:#333333;
+    color:#ffffff;
+    line-height:80px;
+    text-align: center;
+}
