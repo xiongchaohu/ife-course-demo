@@ -33,12 +33,23 @@
          */
 
         var aqiList = document.getElementById("aqi-list");
+        var temp = [];
         for (var i = 0; i < aqiData.length; i++) {
             if (aqiData[i][1] > 60) {
-                var oLi = document.createElement("li");
-                oLi.innerHTML = aqiData[i][0] + ',' + aqiData[i][1];
-                aqiList.appendChild(oLi);
+                temp.push(aqiData[i]);
+                /*var oLi = document.createElement("li");
+                 oLi.innerHTML = aqiData[i][0] + ',' + aqiData[i][1];
+                 aqiList.appendChild(oLi);*/
             }
+        }
+        console.log(temp)
+        console.log(temp.sort(function (a, b) {
+            return b[1] - a[1];
+        }));
+        for (var i = 0; i < temp.length; i++) {
+            var oLi = document.createElement("li");
+            oLi.innerHTML = temp[i][0] + ',' + temp[i][1];
+            aqiList.appendChild(oLi);
         }
 
     })();
