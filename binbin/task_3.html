@@ -67,7 +67,7 @@
      */
     function sortAqiData(data) {
         return data.sort(function (a, b) {
-            return b[1] - a[1];
+            return a[1] - b[1];
         });
     }
 
@@ -78,9 +78,10 @@
      */
     function render(data) {
         var resortUl = document.getElementById("resort");
+        var indexStr=['一','二','三','四','五','六','七','八','九','十'];
         for (var i = 0; i < data.length; i++) {
             var oLi = document.createElement("li");
-            oLi.innerHTML = `第${i + 1}名：${data[i][0]}空气质量:<b>${data[i][1]}</b>`;
+            oLi.innerHTML = `第${indexStr[i]}名：${data[i][0]}空气质量:<b>${data[i][1]}</b>`;
             resortUl.appendChild(oLi);
         }
     }
@@ -99,7 +100,6 @@
     }
 
     init();
-    //console.log(getData());
 </script>
 </body>
 </html>
